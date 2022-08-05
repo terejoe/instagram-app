@@ -1,11 +1,11 @@
 module.exports = {
-	globDirectory: 'public/',
+	globDirectory: 'build/',
 	globPatterns: [
-		'**/*.{ico,html,png,json,txt}'
+		'**/*.{json,ico,html,png,txt,css,js,svg}'
 	],
-	swDest: 'sw.js',
-	ignoreURLParametersMatching: [
-		/^utm_/,
-		/^fbclid$/
+	swDest: "build/sw.js",
+	swSrc: "src/sw.js",
+	"globIgnores": [
+		"../workbox-config.js"
 	]
 };

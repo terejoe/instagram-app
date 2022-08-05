@@ -14,7 +14,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build":"my-build-script && workbox generateSW workbox wizard",
+    "build":"react-scripts build && workbox injectManifest workbox-config.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
