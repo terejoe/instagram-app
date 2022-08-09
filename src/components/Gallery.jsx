@@ -45,14 +45,17 @@ const Gallery = () => {
 
             <section className="gallery">
                 {!allPhotos && <Waveform size={90} lineWeight ={3.5} speed={1} color ="black"/>}
-                {allPhotos.length === 0 ? <div className="null-photo">No Photos here</div>:<></>}
-                {allPhotos?.map((photo) => (
-                    <div className="item" key={photo.id}>
-                        <img src ={photo.url} className="item-image" alt=''></img>
+                {
+                    allPhotos && allPhotos.length > 0 ? (
+                    allPhotos.map(photo=>{
+                    return (
+                    <div className="item" key ={photo.id}>
+                         <img src ={photo.url} className="item-image" alt=''></img>
                         <button className="delete-button" onClick ={() => removePhoto(photo.id)}>Delete</button>
-                    </div> 
-                ))}
-                
+                    </div>
+                    )})
+                    ): (<div className="null-photo">Add Photos here</div>)
+                }
             </section>
         </>
      )
