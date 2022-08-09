@@ -2,7 +2,7 @@ import instagram from  '../assets/instagram.png'
 
 const  Nav = () => {
     return ( 
-        <nav>
+        <nav className='container-nav'>
             <button className='Logo'>
                 <img src =  {instagram} alt ="logo" />
             </button>

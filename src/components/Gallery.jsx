@@ -34,6 +34,7 @@ const Gallery = () => {
     
     return (
         <>
+            <div className="null-photo">No Photos here</div>
             <input type ="file" name = "photo" id = "addPhotoInput" />
             <label htmlFor="addPhotoInput" onClick={addPhoto}>
                 <i className="add-photo-button fas fa-plus-square"></i>

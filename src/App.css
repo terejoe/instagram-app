@@ -81,6 +81,12 @@ nav {
   border-radius: 50%;
   margin-top: 0.5em;
 }
+.null-photo{
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 @media screen and (max-width: 768px) {
   .profile-photo {
@@ -92,14 +98,14 @@ nav {
   nav {
     display: grid;
     width: 100%;
-    grid-template-columns: 0.8fr 0.4fr 0.5fr;
+    grid-template-columns: 0.6fr 0.2fr 0.6fr;
   }
   .search {
-    width: 13.5em;
+    width: 10.5em;
   }
   .nav-links {
     display: grid;
-    grid-template-columns: 0.9fr 0.9fr 0.9fr 0.9fr;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
   }
   .bio {
     padding: 3em 0 2em 0;

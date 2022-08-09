@@ -3,9 +3,10 @@ module.exports = {
 	globPatterns: [
 		'**/*.{json,ico,html,png,txt,css,js,svg}'
 	],
-	swDest: "build/sw.js",
-	swSrc: "src/sw.js",
-	"globIgnores": [
-		"../workbox-config.js"
+	swDest: 'build/sw.js',
+	ignoreURLParametersMatching: [
+		/^utm_/,
+		/^fbclid$/,
+		/^n/
 	]
 };
