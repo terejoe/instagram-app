@@ -34,15 +34,6 @@ const Gallery = () => {
     
     return (
         <>
-            <input type ="file" name = "photo" id = "addPhotoInput" />
-            <label htmlFor="addPhotoInput" onClick={addPhoto}>
-                <i className="add-photo-button fas fa-plus-square"></i>
-            </label>
-            <button htmlFor= "deleteAllPhoto" onClick={() => deletePhotos()}>
-                <i className="delete-all fa-solid fa-trash"></i>
-            </button>
-            
-
             <section className="gallery">
                 {!allPhotos && <Waveform size={90} lineWeight ={3.5} speed={1} color ="black"/>}
                 {
@@ -50,12 +41,21 @@ const Gallery = () => {
                     allPhotos.map(photo=>{
                     return (
                     <div className="item" key ={photo.id}>
-                         <img src ={photo.url} className="item-image" alt=''></img>
+                         <img src ={photo.url} className="item-image" alt='import'></img>
                         <button className="delete-button" onClick ={() => removePhoto(photo.id)}>Delete</button>
                     </div>
                     )})
                     ): (<div className="null-photo">Add Photos here</div>)
                 }
+            </section>
+            <section className="buttons">
+                <input type ="file" name = "photo" id = "addPhotoInput" />
+                <label htmlFor="addPhotoInput" onClick={addPhoto}>
+                    <i className="add-photo-button fas fa-plus-square"></i>
+                </label>
+                <button htmlFor= "deleteAllPhoto" onClick={() => deletePhotos()}>
+                    <i className="delete-all fa-solid fa-trash"></i>
+                </button>
             </section>
         </>
      )

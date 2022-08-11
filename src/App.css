@@ -111,12 +111,18 @@ nav {
     padding: 3em 0 2em 0;
     margin-bottom: 2em;
   }
-  .delete-all{
-    position: absolute;
-    bottom: 7em;
-    right: 2em;
+
+  .add-photo-button {
+    position:relative;
+    left: 6em;
+    top: -3em;
   }
   
+  .delete-all{
+    position: relative;
+    bottom: 0;
+    right: -6.5em;
+  }
 }
 
 .profile-photo img {
@@ -175,19 +181,22 @@ nav {
   display: none;
 }
 
+.buttons{
+  position:fixed;
+  bottom: 2.5em;
+  right: 7em;
+}
+
 .add-photo-button {
   transform: scale(3);
-  position: absolute;
-  bottom: 2em;
-  right: 2em;
+  position: relative;
+  bottom: 0;
+  right: 2.7em;
   cursor: pointer;
 }
 
 .delete-all{
-  transform: scale(2.8);
-  position:absolute;
-  bottom: 2.5em;
-  right: 7em;
+  transform: scale(3);
   cursor: pointer;
 }
 
@@ -195,6 +204,8 @@ nav {
   /* flex on the container and flex wrap "wraps" images that cannot fit on the same line to the next line */
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
 }
 
 .item {
