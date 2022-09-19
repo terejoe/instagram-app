@@ -108,12 +108,12 @@ nav {
   display: none;
   flex-direction: row;
   position: fixed;
-  background-color: #f37736;
+  background-color: #0365a7fa;
   width: 250px;
-  top: 75%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -75%);
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   padding: 1rem;
   z-index: 5; /*Higher than the z-index of the background*/
 }
@@ -132,7 +132,7 @@ nav {
 }
 .confirmation-delete-btn{
   display: inline-flex;
-  background-color: #cc0000;
+  background-color: #b91a1a;
   color: white;
   padding: 0.7rem 1.4rem;
   border: none;
@@ -140,7 +140,7 @@ nav {
   font-size: 1rem;
 }
 .cancel-button{
-  background-color: #999999;
+  background-color: gray;
   padding: 0.7rem 1.4rem;
   border: none;
   border-radius: 0.3rem;
